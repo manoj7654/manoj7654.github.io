@@ -4,22 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <!-- <h1>Hello world</h1>
     <div id="nav-menu">
-        <div class="nav-link home"></div>
-        <div class="nav-link about"></div>
-        <div class="nav-link skills"></div>
-        <div class="nav-link projects"></div>
-        <div class="nav-link contact"></div>
-        <div class="nav-link resume"></div>
+        <div id="home" class="nav-link home"><a href="">Home</a></div>
+        <div class="nav-link about"><a href="">About</a></div>
+        <div class="nav-link skills"><a href="">Skills</a></div>
+        <div class="nav-link projects"><a href="">Projects</a></div>
+        <div class="nav-link contact"><a href="">Contact</a></div>
+        <div class="nav-link resume"><a href="">Resume</a></div>
     </div>
     <div id="home"></div>
     <div id="about" class="about section"></div>
     <div id="skills"></div>
     <div id="projects"></div>
-    <div id="contact"></div>
+    <div id="contact"></div> -->
+    <nav id="nav-menu">
+      
+        <ul>
+            <li><a class="nav-link home" href="#home">HOME</a></li>
+            <li><a class="nav-link about" href="#about">ABOUT</a></li>
+            <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+            <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+            <!-- <li> <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
+            <li><a href="Manoj_Kumar_Resume.pdf.pdf"  download="Manoj_Kumar_Resume.pdf.pdf" id="resume-button-1" >Resume</a></li>
+        </ul>
+    </nav>
+    <!-------------------- HOME ---------------------->
+    <section id="home">
+        <img src="./images/profile pic 2.jpg" class="home-img" alt="">
+        <h1 id="user-detail-name" >Manoj Kumar</h1>
+        <h2 id="user-detail-intro"> I am a Developer</h2>
+        <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-2">Resume</button></a>
+    </section>
+    <!-------------------- ABOUT ---------------------->
+    <section id="about" class="about section">
+        <title>About</title>
+        <h1 id="user-detail-name">Manoj Kumar</h1>
+        <h2 id="user-detail-intro">
+            I am a Full Stack Developer who know HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS,
+            MONGODB, POSTMAN.
+        </h2>
+    </section>
+    <!-------------------- SKILLS ---------------------->
+    <section id="skills">
+        <div class="skills-card">
+            <img class="skills-card-img" src="./image/nodejs_logo.png" alt="nodejs.png" />
+            <h5 class="skills-card-name">Node JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./image/expressjs_logo.png" alt="express.png" />
+            <h5 class="skills-card-name">Express JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./image/mongoDB_logo.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">Mongo DB</h5>
+        </div>
+    </section>
+    <!-------------------- PROJECTS ---------------------->
+    <section id="projects">
+    </section>
+    <!-------------------- CONTACTS ---------------------->
+    <section id="contact">
+        
+    </section>
+    <!-------------------- RESUME ---------------------->
+    <section id="resume"></section>
+    <!-------------------- GitHUB ---------------------->
+    <section class="react-activity-calendar">
+    </section>
 </body>
 </html>
+
+<script>
+//       const link = document.getElementById("downloadLink");
+//   link.addEventListener("click", async function () {
+//     const url = "./Manoj_Kumar_Resume (8).pdf";
+//     const a = document.createElement("a");
+//     a.href = url;
+//     a.target = "_blank";
+//     a();
+//     document.body.appendChild(a);
+//     a.click();
+//     document.body.removeChild(a);
+//   });
+
+//  function a() {
+//     const url = "./Manoj_Kumar_Resume (8).pdf";
+//     const a = document.createElement("a");
+//     a.href = url;
+//     a.download = "";
+//     document.body.appendChild(a);
+//     a.click();
+//     document.body.removeChild(a);
+//   }
+
+  let drive = document
+  .querySelector("#resume-button-1")
+  .addEventListener("click", openDrive);
+
+function openDrive() {
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
+  );
+}
+
+</script>
