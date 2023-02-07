@@ -31,7 +31,9 @@
             <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
             <!-- <li> <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
-            <li><a id="resume-link-1" class="nav-link resume" href="Manoj_Kumar_Resume.pdf.pdf"  download>RESUME</a></li>
+            <li> <a class="nav-link resume" href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li>
+
+            <!-- <li><a class="nav-link resume" href="Manoj_Kumar_Resume.pdf.pdf"  download="Manoj_Kumar_Resume.pdf.pdf"  >Resume</a></li> -->
         </ul>
     </nav>
     <!-------------------- HOME ---------------------->
@@ -84,37 +86,37 @@
 </html>
 
 <script>
-//       const link = document.getElementById("downloadLink");
-//   link.addEventListener("click", async function () {
-//     const url = "./Manoj_Kumar_Resume (8).pdf";
-//     const a = document.createElement("a");
-//     a.href = url;
-//     a.target = "_blank";
-//     a();
-//     document.body.appendChild(a);
-//     a.click();
-//     document.body.removeChild(a);
-//   });
+      const link = document.getElementById("downloadLink");
+  link.addEventListener("click", async function () {
+    const url = "./Manoj_Kumar_Resume (8).pdf";
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
 
-//  function a() {
-//     const url = "./Manoj_Kumar_Resume (8).pdf";
-//     const a = document.createElement("a");
-//     a.href = url;
-//     a.download = "";
-//     document.body.appendChild(a);
-//     a.click();
-//     document.body.removeChild(a);
-//   }
+ function a() {
+    const url = "./Manoj_Kumar_Resume (8).pdf";
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 
-  let drive = document
-  .querySelector("#nav-link-1")
-  .addEventListener("click", openDrive);
+//   let drive = document
+//   .querySelector("nav-link.resume")
+//   .addEventListener("click", openDrive);
 
-function openDrive() {
-  window.open(
-    (href =
-      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
-  );
-}
+// function openDrive() {
+//   window.open(
+//     (href =
+//       "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
+//   );
+// }
 
 </script>
