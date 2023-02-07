@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(212, 201, 201);
+}
 #nav-menu{
     
     height: 70px;
@@ -22,5 +25,250 @@
     padding: 0 80px;
     margin: auto;
   }
-  
+/* ............................................Home Section.................................. */
+
+  #home {
+    display: flex;
+    background: url("data:image/jpeg;base64,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") no-repeat center;
+    background-color: #111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+  }
+  #home .max-width {
+    width: 100%;
+    display: flex;
+  }
+  #home .max-width .row {
+    margin-right: 0;
+  }
+  #home .home-content .text-1 {
+    font-size: 27px;
+  }
+  #home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  #home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+  }
+  #home .home-content .text-3 span {
+    color: Tomato;
+    font-weight: 500;
+  }
+  #home .home-content a {
+    display: inline-block;
+    background: Tomato;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid Tomato;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  #home .home-content a:hover {
+    color: Tomato;
+    background: none;
+  }
+  .home-content{
+    display: flex;
+    justify-content: space-between;
+  }
  
+  .home-img{
+    width: 80%;
+    /* height: 150px; */
+
+    border-radius: 10%;
+  }
+  #one{
+    width: 200%;
+    /* border: 1px solid red; */
+  }
+  #two{
+    height: auto;
+    width: 70%;
+    /* border: 1px solid red; */
+  }
+/* ................................About Section............................. */
+
+  #about {
+    width: 100%;
+    height: 400px;
+    border: 1px solid red;
+  }
+  #about h1{
+   text-align: center;
+  }
+  .left{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+  
+  }
+  .left img{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 100px;
+  }
+  .right{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+  
+  }
+  .right p{
+    font-size: 20px;
+  }
+  .about-section{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+
+  }
+ /* ..............................Skill Section......................... */
+  .skill{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+   gap:10px;
+   padding-bottom: 50px;
+  }
+  #skills h1{
+   color:red;
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+   font-size: 30px;
+  }
+ 
+  .skills-card{
+    /* border: 1px solid red; */
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:white;
+    border-radius: 10px;
+  }
+  .skills-card img{
+    width: 100%;
+  
+ border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    
+  }
+.skills-card-name{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* ........................................Project Section .................................. */
+#projects h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.project{
+  height: auto;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:30px
+}
+
+.project  .project-card:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  background: tomato;
+  color: white;
+ 
+}
+ .project-card{
+  height: auto;
+  width: 100%;
+ 
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color:#222;
+  padding-top: 40px;
+  color: #fff;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  
+}
+.project .project-card img{
+  width: 90%;
+  height: 200px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.project .project-card h1,p{
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+.repo-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  margin-top: 5%;
+  margin-left: 10px;
+  /* border: 2px solid wheat; */
+}
+
+.project-github-link {
+  display: flex;
+  width: 35%;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  
+}
+.project-github-link a{
+  text-decoration: none;
+  color: white;
+}
+.project-github-link:hover{
+  cursor: pointer;
+  background:tomato;
+  
+}
+
+.project-deployed-link {
+  display: flex;
+  width: 35%;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.project-deployed-link a{
+  text-decoration: none;
+  color: white;
+}
+.project-deployed-link:hover{
+  cursor: pointer;
+  background: tomato;
+}
+  @media screen and (min-width: 200px) and (max-width:400px) {
+    .home-content{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap:20px
+   
+    }
+  }

@@ -8,20 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h1>Hello world</h1>
-    <div id="nav-menu">
-        <div id="home" class="nav-link home"><a href="">Home</a></div>
-        <div class="nav-link about"><a href="">About</a></div>
-        <div class="nav-link skills"><a href="">Skills</a></div>
-        <div class="nav-link projects"><a href="">Projects</a></div>
-        <div class="nav-link contact"><a href="">Contact</a></div>
-        <div class="nav-link resume"><a href="">Resume</a></div>
-    </div>
-    <div id="home"></div>
-    <div id="about" class="about section"></div>
-    <div id="skills"></div>
-    <div id="projects"></div>
-    <div id="contact"></div> -->
+   
     <nav id="nav-menu">
       
         <ul>
@@ -30,7 +17,7 @@
             <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
             <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-            <li><a class="nav-link resume" href="#"></a></li>
+            <li><a class="nav-link resume" href="#">RESUME</a></li>
             <!-- <li> <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
             <!-- <li> <a class="nav-link resume" href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
 
@@ -39,70 +26,146 @@
     </nav>
     <!-------------------- HOME ---------------------->
     <section id="home">
-        <img src="./images/profile pic 2.jpg" class="home-img" alt="">
-        <h1 id="user-detail-name" >Manoj Kumar</h1>
-        <h2 id="user-detail-intro"> I am a Developer</h2>
-        <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-2">Resume</button></a>
+        <div class="max-width">
+            <div class="home-content">
+                <div id="one" >
+                    <div class="text-1">Hi, there</div>
+                <div id="user-detail-name" class="text-2">Manoj Kumar</div>
+                <div id="user-detail-intro" class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="Manoj_Kumar_Resume.pdf.pdf"  download="Manoj_Kumar_Resume" id="resume-button-1" target="_blank">Resume</a>
+                </div>
+               <div id="two">
+                <img src="./images/profile pic 2.jpg" class="home-img" alt="">
+               </div>
+            </div>
+        </div>
     </section>
     <!-------------------- ABOUT ---------------------->
     <section id="about" class="about section">
-        <title>About</title>
-        <h1 id="user-detail-name">Manoj Kumar</h1>
-        <h2 id="user-detail-intro">
-            I am a Full Stack Developer who know HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS,
-            MONGODB, POSTMAN.
-        </h2>
+        <h1>About Me</h1>
+        <div class="about-section">
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkN4hjkF7Ii1IiaWOYip_u9IwsavcAb5sBXA&usqp=CAU" alt="">
+        </div>
+        <div class="right">
+            <p>A passionate Nodejs Back-End Developer, Dedicated to developing robust applications that interact with the Backend part of web applications. Extensive expertise in website architecture, design, web design, and web API designs. I'm also an enthusiastic learner who's constantly working to learn new things and improve my skills to be the best version of myself.</p>
+
+        </div>
+    </div>
     </section>
     <!-------------------- SKILLS ---------------------->
     <section id="skills">
         <h1>Skills</h1>
+        <div class="skill">
         <div class="skills-card">
-            <img class="skills-card-img" src="./image/nodejs_logo.png" alt="nodejs.png" />
+            <img class="skills-card-img" src="./images/nodejs.png" alt="nodejs.png" />
             <h5 class="skills-card-name">Node JS</h5>
         </div>
         <div class="skills-card">
-            <img class="skills-card-img" src="./image/expressjs_logo.png" alt="express.png" />
+            <img class="skills-card-img" src="./images/ee.png" alt="express.png" />
             <h5 class="skills-card-name">Express JS</h5>
         </div>
         <div class="skills-card">
-            <img class="skills-card-img" src="./image/mongoDB_logo.png" alt="mongodb.png" />
+            <img class="skills-card-img" src="./images/mongodb.png" alt="mongodb.png" />
             <h5 class="skills-card-name">Mongo DB</h5>
         </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/jsss.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">JavaScript</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/vscode.jpg" alt="mongodb.png" />
+            <h5 class="skills-card-name">Vs Code</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/aws.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">Aws</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/github.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">MONGO DB</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/html.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">HTML</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/css2.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">CSS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/socket io2.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">WebSocket</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">DSA</h5>
+        </div>
+    </div>
     </section>
     <!-------------------- PROJECTS ---------------------->
     <section id="projects">
-       <div class="project-card">
-        <img src="" alt="">
-        <h1 class="project-title">Title</h1>
-        <p class="project-description">Fitnessblender is a health Hub. Fitnessblender goal is to make health and fitness attainable,affordable and approachable.</p>
-        <h2 class="project-tech-stack">Tech Stack</h2>
-        <button class="project-github-link">Github</button>
-        <button class="project-deployed-link">Live</button>
-       </div>
-       <div class="project-card">
-        <img src="" alt="">
-        <h1 class="project-title">Title</h1>
-        <p class="project-description">Description</p>
-        <h2 class="project-tech-stack">Tech Stack</h2>
-        <button class="project-github-link">Github</button>
-        <button class="project-deployed-link">Live</button>
-       </div>
-       <div class="project-card">
-        <img src="" alt="">
-        <h1 class="project-title">Title</h1>
-        <p class="project-description">Description</p>
-        <h2 class="project-tech-stack">Tech Stack</h2>
-        <button class="project-github-link">Github</button>
-        <button class="project-deployed-link">Live</button>
-       </div>
-       <div class="project-card">
-        <img src="" alt="">
-        <h1 class="project-title">Title</h1>
-        <p class="project-description">Description</p>
-        <h2 class="project-tech-stack">Tech Stack</h2>
-        <button class="project-github-link">Github</button>
-        <button class="project-deployed-link">Live</button>
-       </div>
+        <h1>Projects</h1>
+        <div class="project">
+          
+            <div class="project-card">
+                <img src="./images/p1.png" alt="">
+                <h1 class="project-title">Fitnessblender.com</h1>
+                <p class="project-description">Fitnessblender is a health Hub. Fitnessblender goal is to make health and fitness attainable,affordable and approachable.</p>
+                <p class="project-tech-stack">Tech Stack: Html,JavaScript,CSS</p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span>  <a href="https://github.com/manoj7654/calculating-use-926" target="_blank"> Git Repo </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="https://bucolic-trifle-671509.netlify.app/" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+               </div>
+               <div class="project-card">
+                <img src="./images/p2.png" alt="">
+                <h1 class="project-title">Desktime.com</h1>
+                <p class="project-description">Desktime is a product designed to increase productivity in an open and empowering environment.Boosting your employees and motivating them.</p>
+                <p class="project-tech-stack">Tech Stack: Html,JavaScript,CSS</p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span>  <a href="https://github.com/nitishmandal01/pointless-books-8646" target="_blank"> Git Repo </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="https://time-rocket.netlify.app/index.html" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+               </div>
+               <div class="project-card">
+                <img src="./images/p3.png" alt="">
+                <h1 class="project-title">Webacoof.com</h1>
+                <p class="project-description">Bewacoof is the India's largest fashion D2C barand and  e-commerce startup and also User can buy any thing from here.</p>
+                <p class="project-tech-stack">Tech Stack: Html,JavaScript,CSS</p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span>  <a href="https://github.com/manoj7654/fascinated-governor-8349" target="_blank"> Git Repo </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="https://taupe-conkies-95d9ec.netlify.app/" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+               </div>
+               <div class="project-card">
+                <img src="./images/p3.png" alt="">
+                <h1 class="project-title">Webacoof.com</h1>
+                <p class="project-description">Bewacoof is the India's largest fashion D2C barand and  e-commerce startup and also User can buy any thing from here.</p>
+                <p class="project-tech-stack">Tech Stack: Html,JavaScript,CSS</p>
+                <div class="repo-links">
+                    <div class="project-github-link">
+                        <span>  <a href="https://github.com/manoj7654/fascinated-governor-8349" target="_blank"> Git Repo </a></span>
+                    </div>
+                    <div class="project-deployed-link">
+                        <span> <a href="https://taupe-conkies-95d9ec.netlify.app/" target="_blank">Live Site </a></span>
+                    </div>
+                </div>
+               </div>
+        </div>
+      
        
     </section>
     
@@ -121,7 +184,7 @@
     </section>
 </body>
 </html>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 <script>
 //       const link = document.getElementById("downloadLink");
 //   link.addEventListener("click", async function () {
@@ -145,15 +208,24 @@
 //     document.body.removeChild(a);
 //   }
 
-//   let drive = document
-//   .querySelector("nav-link.resume")
-//   .addEventListener("click", openDrive);
+  let drive = document
+  .querySelector("nav-link.resume")
+  .addEventListener("click", openDrive);
 
-// function openDrive() {
-//   window.open(
-//     (href =
-//       "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
-//   );
-// }
+function openDrive() {
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
+  );
+}
+
+
+//   var typed = new Typed(".typing-2", {
+//     strings: ["Back-End Developer", "Daydreamer"],
+//     typeSpeed: 100,
+//     backSpeed: 60,
+//     loop: true,
+//   });
 
 </script>
+<script src="index.js"></script>
