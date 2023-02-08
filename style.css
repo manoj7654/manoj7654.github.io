@@ -267,6 +267,12 @@ body{
   cursor: pointer;
   background: tomato;
 }
+
+/* ...........................Github-Section................................... */
+.github {
+  display: flex;
+}
+
   @media screen and (min-width: 200px) and (max-width:400px) {
     .home-content{
       display: grid;

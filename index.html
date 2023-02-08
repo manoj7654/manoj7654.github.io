@@ -17,7 +17,8 @@
             <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
             <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-            <li><a class="nav-link resume" href="#">RESUME</a></li>
+            <a id="resume-button-1" onclick="window.open('./Chandan_Kumar_resume.pdf', '_blank');"
+            download="">Resume</a>
             <!-- <li> <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
             <!-- <li> <a class="nav-link resume" href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
 
@@ -32,7 +33,8 @@
                     <div class="text-1">Hi, there</div>
                 <div id="user-detail-name" class="text-2">Manoj Kumar</div>
                 <div id="user-detail-intro" class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="Manoj_Kumar_Resume.pdf.pdf"  download="Manoj_Kumar_Resume" id="resume-button-1" target="_blank">Resume</a>
+                <a id="resume-link-2" onclick="window.open('./Manoj_Kumar_Resume.pdf', '_blank');" class="Drivegoogle" download="">Resume</a>
+
                 </div>
                <div id="two">
                 <img src="./images/profile pic 2.jpg" class="home-img" alt="">
@@ -185,15 +187,21 @@
     <!-------------------- GitHUB ---------------------->
     <section class="react-activity-calendar">
         <h1>GitHub React-Activity-Calendar</h1>
-        <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+        <div class="github">
+        <div id="github-streak-stats">
+            <img src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
             alt="streakstat" />
-        <img id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoj7654&theme=outrun"
+        </div>
+        <div id="github-top-langs">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoj7654&theme=outrun"
             alt="top_languages" />
-        <img id="github-stats-card"
+        </div>
+        <div id="github-stats-card">
+            <img 
             src="https://github-readme-stats.vercel.app/api?username=manoj7654&count_private=true"
             alt="stat-card" />
+        </div>
+    </div>
     </section>
 </body>
 </html>
