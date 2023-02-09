@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-   
-    <nav id="nav-menu">
-      
-        <ul>
-            <li><a class="nav-link home" href="#home">HOME</a></li>
-            <li><a class="nav-link about" href="#about">ABOUT</a></li>
-            <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-            <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-            <li><a class="nav-link resume" href="#">RESUME</a></li>
-            <!-- <li> <a href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
-            <!-- <li> <a class="nav-link resume" href="./Manoj_Kumar_Resume (8).pdf"><button id="resume-button-1">Resume</button></a> </li> -->
+    
+    <div class="nav">
 
-            <!-- <li><a class="nav-link resume" href="Manoj_Kumar_Resume.pdf.pdf"  download="Manoj_Kumar_Resume.pdf.pdf"  >Resume</a></li> -->
-        </ul>
-    </nav>
+        
+        <div id="nav-menu">
+          <nav>
+             <a class="logo" href="">M<span>K</span></a>
+              <ul id="sidemenu">
+                  <li><a class="nav-link home" href="#home">HOME</a></li>
+                  <li><a class="nav-link about" href="#about">ABOUT</a></li>
+                  <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+                  <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+                  <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+                  <li><a class="nav-link resume" href="#">RESUME</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+
+          </nav>
+         
+        </div>
+  </div>
     <!-------------------- HOME ---------------------->
     <section id="home">
         <div class="max-width">
@@ -83,7 +92,7 @@
         </div>
         <div class="skills-card">
             <img class="skills-card-img" src="./images/github.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">MONGO DB</h5>
+            <h5 class="skills-card-name">Github</h5>
         </div>
         <div class="skills-card">
             <img class="skills-card-img" src="./images/html.png" alt="mongodb.png" />
@@ -172,10 +181,26 @@
     
     <!-------------------- CONTACTS ---------------------->
     <section id="contact">
-        <a  id="contact-github" href="https://github.com/manoj7654">GitHub</a>
-        <a  id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/">LinkedIn</a>
-        <a id="contact-phone" href="#">Mobile</a>
-        <a id="contact-email" href="manojsfstm5@gmail.com">Email</a>
+        <h1>Contact</h1>
+        <div class="contact-first">
+           <div>
+            <a href="https://github.com/manoj7654"><i class="fa-brands fa-github"></i></a>
+            <a  id="contact-github" href="https://github.com/manoj7654"></i>GitHub</a>
+           </div>
+          <div>
+            <a href="https://www.linkedin.com/in/manoj-kumar-527974244/"><i class="fa-brands fa-linkedin"></i></a>
+            <a  id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/">LinkedIn</a>
+          </div>
+          <div>
+            <a href=""><i class="fa-sharp fa-solid fa-phone"></i></a>
+            <a id="contact-phone" href="#">7654504943</a>
+          </div>
+          <div>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a id="contact-email" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent">Email</a>
+          </div>
+        </div>
+
     </section>
     <!-------------------- RESUME ---------------------->
     <section id="resume">
@@ -246,5 +271,15 @@ function openDrive() {
 //     loop: true,
 //   });
 
+</script>
+<script>
+    let sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
 </script>
 <script src="index.js"></script>
