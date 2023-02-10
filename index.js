@@ -1,10 +1,18 @@
+let sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-200px";
+}
  // typing text animation script
  var typed = new Typed(".typing", {
   strings: ["Full Stack Back-End Developer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
-});
+})
 
 // let drive=document.querySelector(".Drivegoogle")
 // drive.addEventListener("click",openDrive);
