@@ -223,6 +223,7 @@ nav ul .fas{
     border-radius: 50%;
     height: 70%;
     margin-left: 100px;
+    border: 2px solid red;
   }
   .about-section.right{
     width: 100%;
