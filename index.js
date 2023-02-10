@@ -6,12 +6,12 @@
   loop: true,
 });
 
-let drive=document.querySelector(".Drivegoogle")
-drive.addEventListener("click",openDrive);
+// let drive=document.querySelector(".Drivegoogle")
+// drive.addEventListener("click",openDrive);
 
 
-function openDrive(){
-  window.open(
-    (href="https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
-  );
-}
+// function openDrive(){
+//   window.open(
+//     (href="https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
+//   );
+// }
