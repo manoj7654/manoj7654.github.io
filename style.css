@@ -119,6 +119,31 @@ nav ul .fas{
   cursor: pointer;
 }
 }
+#resume-button-2{
+  height: 40px;
+  width: 100px;
+  background-color: tomato;
+color:white;
+  font-size: 18px;
+  border: 0px;
+  cursor: pointer;
+  
+}
+#resume-button-1{
+  height: 60px;
+  width: 150px;
+  background-color: tomato;
+color:white;
+  font-size: 18px;
+  border: 0px;
+ 
+  border-radius: 10px;
+  
+}
+#resume-button-1:hover{
+  cursor: pointer;
+  background-color: blue;
+}
 /* ............................................Home Section.................................. */
 
   #home {
