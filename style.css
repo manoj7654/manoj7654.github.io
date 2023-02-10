@@ -226,15 +226,15 @@ nav ul .fas{
     border: 2px solid red;
     margin-top: 0px;
   }
-  .about-section #user-detail-intro{
+  .about-section .right{
     width: 100%;
     height: 10px;
     /* border: 1px solid red; */
   
   }
-  #user-detail-intro p{
+  .right p{
     font-size: 20px;
-    margin-top: 70px;
+    margin-top: 80px;
     align-content: flex-start;
     color: white;
   }
