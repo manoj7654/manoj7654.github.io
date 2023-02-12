@@ -14,17 +14,17 @@ function closemenu(){
   loop: true,
 })
 
-// document.getElementById('resume-button-1').addEventListener("click",()=>{
-//   // console.log("OPENinig.....")
-//   window.open("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
-// })
+document.getElementById('resume-button-1').addEventListener("click",()=>{
+  // console.log("OPENinig.....")
+  window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
+})
 
-// document.getElementById('resume-link-1').addEventListener("click",()=>{
-//   // console.log("OPENinig.....")
-//   window.open("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
-// })
+document.getElementById('resume-link-1').addEventListener("click",()=>{
+  // console.log("OPENinig.....")
+  window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
+})
 
-// document.getElementById('resume-button-2').addEventListener("click",()=>{
-//   // console.log("OPENinig.....")
-//   window.open("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
-// })
+document.getElementById('resume-button-2').addEventListener("click",()=>{
+  // console.log("OPENinig.....")
+  window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
+})
