@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
 
         <div id="nav-menu">
             <nav>
-                <a class="logo" href="">M<span>K</span></a>
+                <a class="logo" href="#">M<span>K</span></a>
                 <ul id="sidemenu">
                     <li><a class="nav-link home" href="#home">HOME</a></li>
                     <li><a class="nav-link about" href="#about">ABOUT</a></li>
@@ -27,8 +29,7 @@
                     <li id="resume-button-1"> 
                         <a class="nav-link resume" id="resume-link-1" href='Manoj_Kumar_Resume.pdf' download="Manoj-Resume">RESUME</a>
                     </li>
-                    <!-- <button class="nav-link resume" [id="resume-button-2"] >RESUME</button> -->
-                 
+                    
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -211,8 +212,8 @@
                 <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/">LinkedIn</a>
             </div>
             <div>
-                <a href=""><i class="fa-sharp fa-solid fa-phone"></i></a>
-                <a id="contact-phone" href="#">7654504943</a>
+               
+                <a id="contact-phone" href="#">📞 7654504943</a>
             </div>
             <div>
                 <a href=""><i class="fa-solid fa-envelope"></i></a>
@@ -228,7 +229,9 @@
     <!-------------------- GitHUB ---------------------->
     <section class="react-activity-calendar">
         <h1>GitHub React-Activity-Calendar</h1>
+        <!-- <div class="calendar react-activity-calendar"></div> -->
         <div class="github">
+          
             <div>
                 <img id="github-streak-stats"
                     src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
@@ -247,53 +250,23 @@
         </div>
     </section>
 </body>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
 
+    GitHubCalendar(".calendar", "manoj7654", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "manoj7654", {
+        proxy(username) {
+            return fetch(`https://your-proxy.com/github?user=${username}`)
+        }
+    })
+</script>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-<!-- 
-<script>
-      const link = document.getElementById("downloadLink");
-  link.addEventListener("click", async function () {
-    const url = "./Manoj_Kumar_Resume (8).pdf";
-    const a = document.createElement("a");
-    a.href = url;
-    a.target = "_blank";
-    a();
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
 
- function a() {
-    const url = "./Manoj_Kumar_Resume (8).pdf";
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  }
-
-  let drive = document
-  .querySelector("nav-link.resume")
-  .addEventListener("click", openDrive);
-
-function openDrive() {
-  window.open(
-    (href =
-      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
-  );
-}
-
-
-  var typed = new Typed(".typing", {
-    strings: ["Back-End Developer", "Daydreamer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
-
-</script>  -->
+     
 
 
 
