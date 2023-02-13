@@ -64,10 +64,15 @@ width: 100%;
 nav .fas{
 display: none;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:900px){
 nav.fas{
   display: block;
   font-size: 25px;
+}
+.nav{
+  position: fixed;
+  top:0;
+  z-index: 1;
 }
 nav ul {
   background: tomato;
@@ -263,10 +268,10 @@ color:white;
   .about-section .right{
     width: 100%;
     height: auto;
-    text-align: center;
+   
     /* border: 1px solid red; */
     margin-top: 40px;
-    margin-right: 50px;
+    margin-right: 100px;
    
    
   
@@ -274,11 +279,13 @@ color:white;
   /* .right{
     width: 100%;
     height: auto;
+    margin: auto;
     border: 1px solid red;
   } */
   .right p{
     font-size: 20px;
-   
+  
+   margin-top: 20px;
    text-align: center;
     color: white;
   }
@@ -499,6 +506,7 @@ margin-bottom:30px;
     }
     #home{
       height: auto;
+      width: auto;
       padding-bottom: 50px;
     }
     #one{
@@ -572,6 +580,11 @@ margin-bottom:30px;
 .left img{
   margin-left: 20px;
 }
+.right p{
+  font-size: 15px;
 
+ text-align: start;
+  color: white;
+}
 
 }

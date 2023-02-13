@@ -8,7 +8,7 @@ function closemenu(){
 }
  // typing text animation script
  var typed = new Typed(".typing", {
-  strings: ["Full Stack Back-End Developer"],
+  strings: ["Full Stack  Developer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
