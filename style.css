@@ -342,7 +342,7 @@ color:white;
 
 #projects h1{
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   margin-top: 20px;
@@ -378,6 +378,9 @@ color:white;
   padding-bottom: 10px;
   border-radius: 10px;
   
+}
+.project-card h1{
+font-size: 20px;
 }
 .project .project-card img{
   width: 90%;
@@ -484,17 +487,12 @@ margin-bottom:30px;
 
 
 .github {
+ 
   display: flex;
   justify-content:space-around ;
 }
 
-#github-top-langs img{
-  height: 195px;
-  
-}
-#github-streak-stats img{
-  width: 90%;
-}
+
 
 
 
@@ -538,6 +536,9 @@ margin-bottom:30px;
     #projects h1{
       margin-bottom: 25px;
     }
+    .project-card .project-title{
+      font-size: 10px;
+    }
     
 .github {
   display: grid;
@@ -547,12 +548,13 @@ margin-bottom:30px;
 }
 
 #github-streak-stats img{
-  width: 70%;
+  width: 50%;
   margin-top:20px ;
 }
 #github-stats-card  img{
   width: 70%;
   margin-top: 15px;
+  margin-left: 50px;
 }
 #github-top-langs{
   margin-top: 15px;
@@ -566,8 +568,12 @@ margin-bottom:30px;
   margin-left: 40px;
 }
 #contact{
+  width: 95%;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+.contact-first div{
+  font-size: 20px;
 }
 .about-section{
   
@@ -585,6 +591,12 @@ margin-bottom:30px;
 
  text-align: start;
   color: white;
+}
+.github div{
+  width: 25%;
+}
+.github div img{
+  width: 350%;
 }
 
 }
