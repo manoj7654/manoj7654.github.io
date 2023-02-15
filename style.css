@@ -152,7 +152,7 @@ color:white;
 /* ............................................Home Section.................................. */
 
   #home {
-   
+  
     background: black ;
     position: relative;
     background-color: #111;
@@ -210,9 +210,9 @@ color:white;
     justify-content: space-between;
   }
   #one{
-    margin: auto;
-    margin-top: 200px;
-    margin-left: 150px;
+
+    margin-top: 50px;
+   
   }
  
   .home-img{
@@ -260,18 +260,18 @@ color:white;
     border-radius: 50%;
     height: 250px;
    
-    margin-left: -100px;
+    /* margin-left: -100px; */
     border: 2px solid red;
     margin-top: 10px;
  
   }
   .about-section .right{
-    width: 100%;
+    width: 80%;
     height: auto;
-   
-    /* border: 1px solid red; */
-    margin-top: 40px;
-    margin-right: 100px;
+   margin: auto;
+    border: 1px solid red;
+    margin-top: 5%;
+  
    
    
   
@@ -322,12 +322,19 @@ color:white;
    
     
   }
+  .skills-card :hover{
+    background-color: aqua;
+    cursor: pointer;
+  }
   .skills-card img{
     width: 100%;
   
  border-radius: 10px 10px 0px 0px;
     margin: auto;
     
+  }
+  .skills-card img:hover{
+    background-color: aqua;
   }
 .skills-card-name{
   font-size: 20px;
@@ -350,7 +357,8 @@ color:white;
 .project{
   height: auto;
 
-  /* border: 1px solid red; */
+margin: auto;
+  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap:10px;
@@ -448,7 +456,7 @@ font-size: 20px;
 
 #contact{
   height: auto;
-  width: 100%;
+
   border:1px solid red;
   background: #222;
 }
@@ -461,6 +469,7 @@ font-size: 20px;
   margin-bottom: 0px;
 }
 .contact-first{
+ 
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
@@ -507,14 +516,14 @@ margin-bottom:30px;
       width: auto;
       padding-bottom: 50px;
     }
-    #one{
+    /* #one{
       margin-left: 40px;
       margin-top: 150px;
      width: auto;
     
-    }
+    } */
     .right{
-      margin-left: 40px;
+      margin-left: 30px;
       
     }
     .skill{
@@ -523,15 +532,16 @@ margin-bottom:30px;
       gap:10px
     }
     .project{
-     
+       width: 80%;
       display: grid;
       grid-template-columns: repeat(1,1fr);
-      gap:5px
+      gap:5px;
+      margin-left: 40px;
     }
     .project-card{
-      width: 80%;
+      width: auto;
       margin-top: 0px;
-      margin-left: 40px;
+      
     }
     #projects h1{
       margin-bottom: 25px;
@@ -599,4 +609,33 @@ margin-bottom:30px;
   width: 350%;
 }
 
+}
+
+
+
+
+
+
+
+.home-content{
+  /* border: 1px solid blue; */
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.home-content>div{
+  /* border: 1px solid red; */
+  
+}
+.home-content>div:nth-child(2){
+  width:300px;
+  height: 350px;
+}
+.home-content>div:nth-child(2)>img
+{
+
+ width: 100%;
+ height:100%;
+  border-radius: 50%;
 }
