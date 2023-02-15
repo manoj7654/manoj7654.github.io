@@ -29,4 +29,8 @@ document.getElementById('resume-link-2').addEventListener("click",()=>{
   window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
 })
 
-
+sr.reveal('#home',{})
+sr.reveal('#main-cont p',{delay:200})
+sr.reveal('#main-cont h1',{delay:300})
+sr.reveal('.container',{delay:400})
+sr.reveal('#resume-button-2',{interval:500})
