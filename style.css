@@ -269,7 +269,7 @@ color:white;
     width: 80%;
     height: auto;
    margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 5%;
   
    
@@ -358,7 +358,7 @@ color:white;
   height: auto;
 
 margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap:10px;
