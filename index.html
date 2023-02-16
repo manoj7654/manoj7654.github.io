@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -90,7 +90,7 @@
                 <h5 class="skills-card-name">Mongo DB</h5>
             </div>
             <div class="skills-card">
-                <img class="skills-card-img" src="./images/jsss.png" alt="mongodb.png" />
+                <img class="skills-card-img" src="./images/javascript.png" alt="mongodb.png" />
                 <h5 class="skills-card-name">JavaScript</h5>
             </div>
             <div class="skills-card">
@@ -210,7 +210,7 @@
     <!-------------------- GitHUB ---------------------->
     <section class="react-activity-calendar">
         <h1>GitHub React-Activity-Calendar</h1>
-        <!-- <div class="calendar react-activity-calendar"></div> -->
+        <div class="calendar react-activity-calendar"></div>
         <div class="github">
           
             <div>
@@ -229,7 +229,24 @@
                     alt="stat-card" />
             </div>
         </div>
+        
     </section>
+    <section id="gitcal">
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    
+        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    
+        <!-- Prepare a container for your calendar. -->
+        <!-- <div class="calendar">
+            <!-- Loading stuff -->
+        </div>
+     -->
+        <script>
+            GitHubCalendar(".calendar", "manoj7654");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "manoj7654", { responsive: true });
+      </script>
     <section id="contact">
         <h1>Contact</h1>
         <div class="contact-first">
@@ -242,8 +259,9 @@
                 <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/">LinkedIn</a>
             </div>
             <div>
-               
-                <a id="contact-phone" href="#">📞 7654504943</a>
+                <i class="fa-solid fa-phone-plus"></i>
+                <a id="contact-phone" href="#">📞7654504943</a>
+                
             </div>
             <div>
                 <a href=""><i class="fa-solid fa-envelope"></i></a>
@@ -253,18 +271,7 @@
 
     </section>
 </body>
-<!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
-<!-- <script>
 
-    GitHubCalendar(".calendar", "manoj7654", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "manoj7654", {
-        proxy(username) {
-            return fetch(`https://your-proxy.com/github?user=${username}`)
-        }
-    })
-</script> -->
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
