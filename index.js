@@ -52,6 +52,7 @@ const sr = ScrollReveal({
   sr.reveal('#resume-button-2',{interval:700})
 
   sr.reveal('#about h1',{delay:200})
+  sr.reveal('#img',{delay:400})
   sr.reveal('#user-detail-intro',{delay:600})
 
   // scroll SKILLS//
