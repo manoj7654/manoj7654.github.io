@@ -871,8 +871,13 @@ margin-left: 30px;
 }
 
 
+section h1{
 
-
+  padding-top:80px
+}
+html{
+  scroll-behavior: smooth;
+}
 
 
 
