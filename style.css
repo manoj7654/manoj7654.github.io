@@ -153,7 +153,7 @@ color:white;
 
   #home {
   
-    background-image:url("https://www.pixelstalk.net/wp-content/uploads/images6/3D-HD-Wallpaper-Black-Dark-620x388.jpg") ;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_ZcO11FTkmnn_RktuSnMu1xLlPBUVgHj9A&usqp=CAU") ;
     position: relative;
     background-color: #111;
     height: 100vh;
@@ -337,9 +337,9 @@ color:white;
     
   }
   .skills-card :hover{
-    background-color: aqua;
+   
     cursor: pointer;
-    transform: scale(1.05);
+   
   }
   .skills-card img{
     width: 100%;
