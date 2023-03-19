@@ -19,15 +19,32 @@ function closemenu(){
 //   window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
 // })
 
-document.getElementById('resume-link-1').addEventListener("click",()=>{
-  // console.log("OPENinig.....")
-  window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
-})
+// document.getElementById('resume-link-1').addEventListener("click",()=>{
+//   // console.log("OPENinig.....")
+//   window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
+// })
 
-document.getElementById('resume-link-2').addEventListener("click",()=>{
-  // console.log("OPENinig.....")
-  window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
-})
+// document.getElementById('resume-link-2').addEventListener("click",()=>{
+//   // console.log("OPENinig.....")
+//   window.location.assign("https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link", "_blank");
+// })
+
+
+let resume1 = document
+  .getElementById("resume-link-1")
+   .addEventListener("click",opendrive);
+
+  let resume2 = document
+  .getElementById("resume-link-2")
+  .addEventListener("click",opendrive);
+
+
+function opendrive(){
+  window.open(
+    (href =
+      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link")
+  );
+ }
 
 // sr.reveal('#home',{})
 // sr.reveal('#main-cont p',{delay:200})
