@@ -219,9 +219,7 @@ color:white;
   .home-img{
     width: 80%;
     margin-top: 100px;
-    /* height: 150px; */
-
-    /* border-radius: 10%; */
+   
   }
 /* ................................About Section............................. */
 .about-section{
@@ -712,7 +710,7 @@ margin-bottom:30px;
 
  width: 100%;
  height:90%;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 
@@ -812,7 +810,7 @@ margin-bottom:30px;
 
  width: 70%;
  height:70%;
-  border-radius: 50%;
+  border-radius: 20%;
   margin-top: 20px;
   margin-left: 50px;
 }
