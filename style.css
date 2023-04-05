@@ -128,6 +128,7 @@ nav ul .fas{
   height: 40px;
   width: 0px; 
   background-color: tomato;
+  
 color:white;
   font-size: 18px;
   border: 0px;
@@ -140,9 +141,9 @@ color:white;
   /* background-color: tomato; */
 color:white;
   font-size: 18px;
-  border: 0px;
+  /* border: 2px solid blue; */
  
-  border-radius: 10px;
+  border-radius: 5px;
   
 }
 #resume-button-1:hover{
@@ -364,7 +365,7 @@ color:white;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
- 
+ margin-top: -50px;
  color:white
 }
 .project{
