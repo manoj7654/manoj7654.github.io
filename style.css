@@ -505,6 +505,9 @@ margin: auto;
 #phone{
   margin-top: -30px;
 }
+#contact-phone{
+  color:white
+}
 
 /* ...........................Github-Section................................... */
 .react-activity-calendar{
