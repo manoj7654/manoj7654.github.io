@@ -46,6 +46,11 @@ function opendrive(){
   );
  }
 
+let phone=document.getElementById("contact-phone");
+phone.addEventListener("click",()=>{
+  alert("+91 7654504943")
+})
+
 // sr.reveal('#home',{})
 // sr.reveal('#main-cont p',{delay:200})
 // sr.reveal('#main-cont h1',{delay:300})
