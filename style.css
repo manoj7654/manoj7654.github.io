@@ -972,7 +972,7 @@ nav .fas {
   .tool {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;;
+    gap: 10px;;
   }
   .tools-card{
     width:auto;
