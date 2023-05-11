@@ -856,9 +856,76 @@ nav .fas {
 
 
 @media screen and (min-width: 820px) and (max-width:1180px) {
-  
+  nav.fas {
+    display: block;
+    font-size: 25px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 850px;
+  }
+
+  nav ul {
+    background: tomato;
+    color: white;
+    position: fixed;
+    top: 0;
+   /* left:0; */
+    /* right: -200px; */
+   
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 25px;
+
+  }
+
+  ul li {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    /* width: 200px;
+  height: 100vh; */
+    /* padding-top: 50px; */
+  }
+
+  ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
   #logo img{
-    margin-right: 800px;
+    margin-left: 300px;
   }
   
   .skill {
@@ -909,29 +976,7 @@ nav .fas {
 
   }
 
-  .project {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5px;
-    margin-left: 40px;
-  }
-
-  .project-card {
-    width: 80%;
-    margin-top: 0px;
-    margin-left: 80px;
-    /* border: 1px solid red; */
-
-  }
-
-  #projects h1 {
-    margin-bottom: 25px;
-  }
-
-  .project-card .project-title {
-    font-size: 10px;
-  }
+ c
 
   #about {
     width: 100%;
@@ -950,12 +995,84 @@ nav .fas {
   }
 }
 
+@media screen and (max-width:280px){
+#nav-menu{
+  width:220px;
+}
+}
+
 @media screen and (min-width: 280px) and (max-width:653px) {
+  nav.fas {
+    display: block;
+    font-size: 25px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  nav ul {
+    background: tomato;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 25px;
+
+  }
+
+  ul li {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    /* width: 200px;
+  height: 100vh; */
+    /* padding-top: 50px; */
+  }
+
+  ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
   .skill {
     width: 82%;
 
     /* border: 1px solid red; */
-    margin-left: 50px;
+    margin-left: 38px;
   }
 
   .skills-card {
@@ -978,6 +1095,9 @@ nav .fas {
     width:auto;
     
   }
+  #logo img{
+    margin-left: 50px;
+  }
 
   #home {
     width: 100%;
@@ -985,11 +1105,11 @@ nav .fas {
 
   .home-content>div:nth-child(2)>img {
 
-    width: 70%;
+    width: 60%;
     height: 70%;
-    border-radius: 20%;
+    border-radius: 10%;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 0px;
   }
 
   .home-content>div:nth-child(1) {
@@ -998,7 +1118,7 @@ nav .fas {
     height: 70%;
     border-radius: 50%;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 0px;
   }
 
   #home {
@@ -1013,13 +1133,16 @@ nav .fas {
 
  } */
   #projects {
-    width: 86%;
+    width: 90%;
     /* border: 1px solid blue; */
 
 
     margin: auto;
   }
-
+  .project-card .project-title {
+    font-size: 20px !important;
+  
+  } 
   .project {
     width: 100%;
     margin: auto;
@@ -1028,16 +1151,21 @@ nav .fas {
     gap: 10px;
 
     /* border: 1px solid red; */
+    /* margin-left: -30px; */
   }
 
   .project-card {
-    width: 200px;
+   width: 100%;
+    /* margin-left: -500px; */
 
     /* border: 1px solid blue; */
+    margin-right: -100px;
 
 
   }
-
+/* .project-card h1{
+  width: auto;
+} */
   #skills {
     margin-left: -20px;
     height: auto;
@@ -1084,6 +1212,7 @@ html {
 }
 
 @media screen and (min-width: 700px) and (max-width:800px) {
+  
   .skill {
     display: grid;
     /* width:70%; */
@@ -1152,3 +1281,134 @@ html {
       font-size: 10px;
   }
 } */
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .project {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    width: 100%;
+    margin-left: 0px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+  }
+
+  .project-card {
+    /* border: 1px solid green; */
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    margin: auto;
+
+  }
+
+  #projects h1 {
+    margin-bottom: 25px;
+  }
+
+  .project-card .project-title {
+    font-size: 10px;
+  }
+
+}
+
+@media  screen and (max-width:723) {
+  
+  .project {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    margin-left: 0px;
+    border: 1px solid red;
+  }
+
+  .project-card {
+    width: 80%;
+    margin-top: 0px;
+    padding-left: 500px;
+    /* border: 1px solid red; */
+
+  }
+
+  #projects h1 {
+    margin-bottom: 25px;
+  }
+
+  .project-card .project-title {
+    font-size: 10px;
+  }
+
+}
+/* @media screen and (max-width:1367px) {
+  nav.fas {
+    display: block;
+    font-size: 25px;
+  }
+#nav-menu{
+  width: 780px;
+}
+  .nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  nav ul {
+    background: tomato;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -100px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 25px;
+
+  }
+
+  ul li {
+    background: tomato;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 200px; 
+  height: 100vh;
+    padding-top: 50px;
+  }
+
+  ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+}  */
