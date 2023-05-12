@@ -178,7 +178,7 @@ article h1::after{
   content:"";
   height:3px;
   width:225px;
- background-color: turquoise;
+ background-color: tomato;
  display: block;
  margin: auto;
 }
@@ -205,7 +205,7 @@ content{
   display:block ;
   height:3px;
   width:220px;
-  background-color:turquoise;
+  background-color:tomato;
   margin: auto;
 
 }
@@ -235,6 +235,51 @@ background-color: white;
   background: turquoise;
 } */
 .skill-box img{
+ width:100%;
+ border-radius: 10%;
+} 
+
+#toolls h1{
+  text-align: center;
+  padding-top: 80px;
+  color:white;
+  font-size: 40px;
+  font-weight: 20px;
+}
+
+#toolls span{
+  display:block ;
+  height:3px;
+  width:220px;
+  background-color:tomato;
+  margin: auto;
+}
+
+.toolls-box{
+  width:80%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 50px;
+  text-align: center;
+  color:#f1f1f1;
+  padding: 40px 50px;
+}   
+.toolls-box>div{
+width:100px;
+border-radius: 10%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color: white;
+/* border: 3px solid turquoise; */
+}
+.toolls-card-name{
+ color:black;
+}
+/* .skill-box>div:hover{
+  transform: scale(1.1);
+  background: turquoise;
+} */
+.toolls-box img{
  width:100%;
  border-radius: 10%;
 } 
@@ -286,7 +331,7 @@ color:black;
 .project-card img{
   width: 100%;
   border-radius: 10px;
-  border:3px solid turquoise
+  border:3px solid tomato
 }
 .project .project-card p{
   text-align: center;
@@ -518,26 +563,39 @@ footer{
       border:none;
   }
   #main{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr); */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
   .pro{
     width: 50%;
     /* border: 1px solid red; */
     height: auto;
-    margin-left: 50px;
+    text-align: center;
+    /* margin-left: 90px; */
   }
   .pro img{
     width: 100%;
     margin-top: 0px;
   }
-
+ #main-cont{
+  width: 100%;
+ }
+   
   .skill-box{
       display: grid;
       /* width:70%; */
       grid-template-columns: repeat(3,1fr);
 
   } 
+  .toolls-box{
+    display: grid;
+    /* width:70%; */
+    grid-template-columns: repeat(3,1fr);
+
+} 
 
   .project{
       display: grid;
@@ -580,6 +638,10 @@ footer{
       grid-template-columns: repeat(2,1fr);
       /* margin-left: -5px; */
   } 
+  .toolls-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
   .project-card{
       width:85%;
       margin-left: 30px;
@@ -590,6 +652,11 @@ footer{
   .skill-box{
      margin-left: 30px;
   } 
+  .toolls-box{
+    margin-left: 30px;
+    /* border: 1px solid red; */
+  }
+ 
   .project-card{
       width:85%;
       margin-left: 30px;
