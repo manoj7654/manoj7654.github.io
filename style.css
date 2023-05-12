@@ -145,10 +145,10 @@ display: flex;
 }
 #resume-button-2:hover{
  background-color: transparent;
- border: 2px solid turquoise;  
+ border: 2px solid tomato;  
 }
 #resume-button-2:hover a{
-  color:turquoise
+  color:black
 }
 .typing{
   color:tomato;
@@ -360,7 +360,7 @@ color:black;
 .project-github-link {
   display: flex;
   width: 35%;
-  border: 2px solid turquoise;
+  border: 2px solid tomato;
   justify-content: center;
   align-items: center;
   
@@ -372,7 +372,7 @@ color:black;
 .project-deployed-link {
   display: flex;
   width: 35%;
-  border: 2px solid turquoise;
+  border: 2px solid tomato;
   justify-content: center;
   align-items: center;
   margin-right: 20px;
@@ -483,7 +483,7 @@ color:black;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: turquoise;
+  color: tomato;
   background: none;
 }
 
@@ -560,7 +560,7 @@ footer{
   }
   .nav-list ul li:nth-child(6):hover{
       background-color:  transparent!important;
-      border:2px solid turquoise;
+      border:2px solid tomato;
       border-radius: 10px;
     
   }
@@ -720,13 +720,13 @@ footer{
   border: none;
   outline: none;
   background-color: #020811;
-  color: turquoise;
+  color: tomato;
   cursor: pointer;
   padding: 12px;
   border-radius: 7px;
 }
 
 #myBtn:hover {
-  background-color: turquoise ;
+  background-color: tomato ;
   color:#010d1d
 }
