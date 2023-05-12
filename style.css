@@ -29,11 +29,9 @@ body{
   font-size: 30px;
   font-weight: bold;
   color:white;
-  /* font-style:italic; */
+  font-style:italic;
   /* background: #010d1d; */
   padding:10px;
-  border-radius: 60%;
-  /* border: 3px solid  turquoise; */
   cursor: pointer;
 
 }
@@ -58,12 +56,13 @@ display: flex;
 .nav-list ul li a:hover{
   color:black;
 }
+
 #resume-button-1{
 
   height:50px;
   width:110px;
   border-radius: 12px;
-  border: 2px solid aqua
+  /* border: 2px solid aqua */
 }
 #resume-button-1{
   display: flex;
@@ -75,6 +74,13 @@ display: flex;
 /* #resume-button-1:hover a{
   color:turquois
 } */
+
+#m{
+  color:rgb(88, 25, 22)
+}
+#k{
+  color:white;
+}
 
                      /* home section styling */
 
