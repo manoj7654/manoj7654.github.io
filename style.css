@@ -69,7 +69,7 @@ display: flex;
   flex-direction: row;
 }
 /* #resume-button-1:hover{
- background-color: turquoise;
+ background-color: tomato;
 } */
 /* #resume-button-1:hover a{
   color:turquois
@@ -148,7 +148,7 @@ display: flex;
  border: 2px solid tomato;  
 }
 #resume-button-2:hover a{
-  color:black
+  color:white
 }
 .typing{
   color:tomato;
@@ -483,7 +483,7 @@ color:black;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: tomato;
+  color: white;
   background: none;
 }
 
