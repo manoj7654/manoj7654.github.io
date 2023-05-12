@@ -2,285 +2,245 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chandan Kumar:Portfolio</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Manoj Kumar | Portfolio </title>
-    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/000/351/686/small/Business__28148_29.jpg">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- auto-type -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css" />
+        <!-- reveal script -->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+<style>
+
+</style>
 
 <body>
-
-    <div class="nav">
-
-
-        <div id="nav-menu">
-            <nav>
-                <a class="logo" href="#">M<span>K</span></a>
-                <ul id="sidemenu">
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> -->
+    <!-- navbar-start -->
+    <nav id="nav-menu">
+            <div class="logo">MK</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav-list">
+                <ul>
                     <li><a class="nav-link home" href="#home">HOME</a></li>
                     <li><a class="nav-link about" href="#about">ABOUT</a></li>
                     <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-                    <li><a class="nav-link tools" href="#tools">TOOLS</a></li>
-
                     <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
                     <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-                    <li id="resume-button-1"> 
-                        <a class="nav-link resume" id="resume-link-1" href='Manoj-Kumar-Resume.pdf' download="Manoj-Resume">RESUME<i class="fa-solid fa-download"></i></a>
-                    </li>
-                    
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li id="resume-button-1"><a  class="nav-link resume" id="resume-link-1" href="Manoj-Kumar-Resume.pdf"
+                       target="_blank"  download="">RESUME <i class="fa-solid fa-download"></i></a></li>          
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-               
-            </nav>
+            </div>
+           
 
-        </div>
-    </div>
+    </nav>
     <!-------------------- HOME ---------------------->
     <section id="home">
-        <div class="max-width">
-            <div class="home-content">
-                
-                <div id="one">
-                    <div class="text-1">Hi, My Name is</div>
-                    <div id="user-detail-name" class="text-2">Manoj Kumar</div>
-                    <div class="text-3">And I'm a <span class="typing"></span></div>
-                    <button  id="resume-button-2"><a id="resume-link-2" href='Manoj-Kumar-Resume.pdf' download="Manoj-Resume">RESUME</a></button>
-                </div>
-                   <div >
-                    <img class="home-img" src="./images/profile.jpg" alt="">
-                   </div>
-            </div>
-        </div>
+      <div id="main-cont">
+                    <p>Hi, My Name is </p>
+                    <h1  id="user-detail-name">Manoj Kumar</h1>
+                    <div class="container">
+                <p><span class="typing"></span></p>
+                    </div>
+                    <button id="resume-button-2"><a id="resume-link-2" href="Manoj-Kumar-Resume.pdf" target="_blank"
+                        download="">Resume</a></button>
+      </div>      
     </section>
+
     <!-------------------- ABOUT ---------------------->
     <section id="about" class="about section">
-        <h1  >About Me</h1>
-       
-        <div class="about-section">
-               <div id="logo">
-                <img id="img" src="https://img.etimg.com/thumb/msid-84146083,width-1015,height-761,imgsize-638053,resizemode-8/prime/technology-and-startups/booting-up-developer-economy-how-tech-startups-are-helping-coders-build-and-test-software-faster.jpg" alt="">
-               </div>
-            <div class="right">
-                <p id="user-detail-intro">A passionate Nodejs Back-End Developer, Dedicated  to developing robust
+        <div class="hero">
+            <article>
+              <h1>About Me</h1>
+              <img class="home-img" width=100% src="https://img.etimg.com/thumb/msid-84146083,width-1015,height-761,imgsize-638053,resizemode-8/prime/technology-and-startups/booting-up-developer-economy-how-tech-startups-are-helping-coders-build-and-test-software-faster.jpg" alt="">
+              <content id="user-detail-intro">
+                A passionate Nodejs Back-End Developer, Dedicated  to developing robust
                     applications with the help of Javascript, Express and Nodejs that interact  with the Backend part of
                     web applications. Extensive expertise in website architecture, design, web design, and web API
                     designs. 
-                    <!-- I'm also an enthusiastic learner who's constantly working to learn new things and improve
-                    my skills to be the best version of myself. -->
-                </p>
-
-            </div>
-        </div>
+              </content>
+        </article>
+       </div>
     </section>
     <!-------------------- SKILLS ---------------------->
     <section id="skills">
         <h1>Skills</h1>
-        <div class="skill">
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/nodejs.png" alt="nodejs.png" />
-                <h5 class="skills-card-name">Node JS</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/ee.png" alt="express.png" />
-                <h5 class="skills-card-name">Express JS</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/mongodb.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Mongo DB</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/javascript.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">JavaScript</h5>
-            </div>
-            
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/aws.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">Aws</h5>
-            </div>
-            
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/html2.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">HTML</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/css2.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">CSS</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/socket io2.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">WebSocket</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">DSA</h5>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./images/redis.png" alt="mongodb.png" />
-                <h5 class="skills-card-name">REDIS</h5>
-            </div>
+        <span></span>
+      <!-- <div class="skill-box">
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images//html2.png" alt="nodejs.png" />
+            <h5 class="skills-card-name">HTML</h5>
         </div>
-    </section>
-   
-    <!-- ............................Tools......................... -->
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/css3.jpg" alt="express.png" />
+            <h5 class="skills-card-name">CSS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/javascript.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">JAVASCRIPT</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/node-js.png" alt="nodejs.png" />
+            <h5 class="skills-card-name">Node JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="http://surl.li/gbpjs" alt="nodejs.png" />
+            <h5 class="skills-card-name">EXPRESS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/mongodb.png" alt="express.png" />
+            <h5 class="skills-card-name">MONGO DB</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/dsa.png" alt="nodejs.png" />
+            <h5 class="skills-card-name">DSA</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/mysql.png" alt="express.png" />
+            <h5 class="skills-card-name">MY SQL</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/aws.png" alt="nodejs.png" />
+            <h5 class="skills-card-name">AWS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="http://surl.li/gbpin" alt="nodejs.png" />
+            <h5 class="skills-card-name">GITHUB</h5>
+        </div>
 
-    <section id="tools">
-             <h1>Tools</h1>
-             <div class="tool">
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/railway.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Railway</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/gibash.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Gitbash</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/netlify.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Netlify</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/postman.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Postman</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/vscode.jpg" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Vscode</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/github.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Github</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/replit.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Replit</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/npm.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Npm</h5>
-                </div>
-                <div class="tools-card">
-                    <img class="tools-card-img" src="./images/notion.png" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Notion</h5>
-                </div>
-                 <div class="tools-card">
-                    <img class="tools-card-img" src="./images/canva.jpg" alt="nodejs.png" />
-                    <h5 class="tools-card-name">Canva</h5>
-                </div>
-             </div>
+     </div>   -->
+
+     <div class="skill-box">
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/nodejs.png" alt="nodejs.png" />
+            <h5 class="skills-card-name">Node JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/ee.png" alt="express.png" />
+            <h5 class="skills-card-name">Express JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/mongodb.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">Mongo DB</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/javascript.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">JavaScript</h5>
+        </div>
+        
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/aws.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">Aws</h5>
+        </div>
+        
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/html2.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">HTML</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/css2.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">CSS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/socket io2.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">WebSocket</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">DSA</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/redis.png" alt="mongodb.png" />
+            <h5 class="skills-card-name">REDIS</h5>
+        </div>
+    </div>
     </section>
-    
     <!-------------------- PROJECTS ---------------------->
-
-
     <section id="projects">
         <h1>Projects</h1>
-        <div class="project">
-
-            <div class="project-card">
-                <img src="./images/p1.png" alt="">
-                <h1 class="project-title">Fitnessblender</h1>
-                <p class="project-description">Fitnessblender is a health Hub. Fitnessblender goal is to make health and
-                    fitness attainable,affordable and approachable.</p>
-                <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS</p>
-                <div class="repo-links">
-                    <div class="project-github-link">
-                        <span> <a href="https://github.com/manoj7654/calculating-use-926" target="_blank"> Git Repo
-                            </a></span>
-                    </div>
-                    <div class="project-deployed-link">
-                        <span> <a href="https://bucolic-trifle-671509.netlify.app/" target="_blank">Live Site </a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./images/Tooth Tracker.png" alt="">
-                <h1 class="project-title">Tooth Tracker</h1>
-                <p class="project-description">Tooth Tracker is booking apointment system . Where patients can book meeting with our doctor and get solution about teeth. 
-                </p>
-                <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS |  MySQL | Express</p>
-                <div class="repo-links">
-                    <div class="project-github-link">
-                        <span> <a href="https://github.com/Yunuslala/uninterested-weather-2204" target="_blank"> Git
-                                Repo </a></span>
-                    </div>
-                    <div class="project-deployed-link">
-                        <span> <a href="https://uninterested-weather-2204-frontend.vercel.app/" target="_blank">Live Site
-                            </a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./images/p3.png" alt="">
-                <h1 class="project-title">Bewacoof.com</h1>
-                <p class="project-description">Bewacoof is the India's largest fashion D2C barand and e-commerce startup
-                    and also User can buy Product related  thing from here.</p>
-                <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS</p>
-                <div class="repo-links">
-                    <div class="project-github-link">
-                        <span> <a href="https://github.com/manoj7654/fascinated-governor-8349" target="_blank"> Git Repo
-                            </a></span>
-                    </div>
-                    <div class="project-deployed-link">
-                        <span> <a href="https://taupe-conkies-95d9ec.netlify.app/" target="_blank">Live Site </a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="./images/tictoe.png" alt="">
-                <h1 class="project-title">Tic Tac Toe</h1>
-                <p class="project-description">Tic Tac Toe is a game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does.</p>
-                <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS | Socket.io | React | Nodejs</p>
-                <div class="repo-links">
-                    <div class="project-github-link">
-                        <span> <a href="https://github.com/manoj7654/Tic-Tac-Toe---clone?organization=manoj7654&organization=manoj7654" target="_blank"> Git Repo
-                            </a></span>
-                    </div>
-                    <div class="project-deployed-link">
-                        <span> <a href="https://genuine-granita-f5d735.netlify.app/" target="_blank">Live Site </a></span>
-                    </div>
-                </div>
+        <span></span>
+     <div class="project">
+        <!-- 1 -->
+        <div class="project-card">
+             <div class="small_div"><img src="./images/p1.png" alt=""></div>
+            <h2 class="project-title">Fitnessblender</h2>
+            <p class="project-description">Fitnessblender is a health Hub. Fitnessblender goal is to make health and
+                fitness attainable,affordable and approachable.</p>
+            <p class="project-tech-stack">>Tech Stack: Html | JavaScript | CSS</p>
+         <div class="repo-links">
+            <div class="project-github-link"><a href="https://github.com/manoj7654/calculating-use-926" target="_blank">Git Repo</a></div>
+            <div class="project-deployed-link"><a href="https://bucolic-trifle-671509.netlify.app/" target="_blank">Live</a></div>
+        </div> 
+       </div>         
+        <!-- 2 -->
+        <div class="project-card">
+             <div class="small_div"><img src="./images/Tooth Tracker.png" alt=""></div>
+            <h2 class="project-title">Tooth Tracker</h2>
+            <p class="project-description">Tooth Tracker is booking apointment system . Where patients can book meeting with our doctor and get solution about teeth. </p>
+            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS |  MySQL | Express</p>
+         <div class="repo-links">
+            <div class="project-github-link"><a  href="https://github.com/Yunuslala/uninterested-weather-2204" target="_blank">Git Repo</a></div>
+            <div class="project-deployed-link"><a  href="https://uninterested-weather-2204-frontend.vercel.app/" target="_blank">Live</a></div>
+         </div>
+       </div>
+        <!-- 3 -->
+        <div class="project-card">
+             <div class="small_div"><img src="./images/p3.png" alt=""></div>
+            <h2 class="project-title">Bewacoof</h2>
+            <p class="project-description">Bewacoof is the India's largest fashion D2C barand and e-commerce startup
+                and also User can buy Product related  thing from here.</p>
+            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS | Express</p>
+            <div class="repo-links">
+                <div class="project-github-link"><a  href="https://github.com/manoj7654/fascinated-governor-8349" target="_blank">Git Repo</a></div>
+                <div class="project-deployed-link"><a  href="https://taupe-conkies-95d9ec.netlify.app/" target="_blank"></a>Live</div>
             </div>
         </div>
-
-
+           
+        <!-- 4 -->
+        <div class="project-card">
+             <div class="small_div"><img src="./images/tictoe.png" alt=""></div>
+            <h2 class="project-title">Tic Tac Toe</h2>
+            <p class="project-description">Tic Tac Toe is a game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does. </p>
+            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS | Socket.io | React | Nodejs | MongoDB</p>
+          <div class="repo-links">
+              <div class="project-github-link"><a href="https://github.com/manoj7654/Tic-Tac-Toe---clone" target="_blank">Git Repo</a></div>
+              <div class="project-deployed-link"><a href="https://genuine-granita-f5d735.netlify.app/" target="_blank">Live</a></div>
+           </div>
+        </div>
+      </div>
     </section>
-
-
-    <!-------------------- CONTACTS ---------------------->
    
-    <!-------------------- RESUME ---------------------->
-    <!-- <section id="resume">
-        <a id="resume-link-1" href='Manoj_Kumar_Resume.pdf' download="Manoj-Resume">RESUME</a>
-    </section> -->
-    <!-------------------- GitHUB ---------------------->
+    <!-- <------------------ GitHUB -------------------- -->
     <section class="react-activity-calendar">
-        <h1>GitHub React-Activity-Calendar</h1>
-        <div class="calendar react-activity-calendar"></div>
-        <div class="github">
-          
+        <h1>GitHub</h1>
+        <span></span>
+        <div class="git-box">
             <div>
                 <img id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-                    alt="streakstat" />
+                src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+                alt="streakstat" />
             </div>
             <div>
                 <img id="github-top-langs"
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoj7654&theme=outrun"
-                    alt="top_languages" />
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoj7654&theme=outrun"
+                alt="top_languages" />
             </div>
             <div>
                 <img id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=manoj7654&count_private=true"
-                    alt="stat-card" />
+                src="https://github-readme-stats.vercel.app/api?username=manoj7654&count_private=true" alt="stat-card" />
             </div>
         </div>
-        
     </section>
     <section id="gitcal">
         <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
@@ -289,45 +249,88 @@
         <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     
         <!-- Prepare a container for your calendar. -->
-        <!-- <div class="calendar">
-            Loading stuff -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
         </div>
-     
+    
         <script>
             GitHubCalendar(".calendar", "manoj7654");
             // or enable responsive functionality
             GitHubCalendar(".calendar", "manoj7654", { responsive: true });
-      </script>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-        <div class="contact-first">
-            <div>
-                <a href="https://github.com/manoj7654"><i class="fa-brands fa-github"></i></a>
-                <a id="contact-github" href="https://github.com/manoj7654"></i>GitHub</a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/manoj-kumar-527974244/"><i class="fa-brands fa-linkedin"></i></a>
-                <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/">LinkedIn</a>
-            </div>
-            <div>
-                <a href=""><i class="fa-solid fa-phone"></i></a>
-                <a id="contact-phone" href="">7654504943</a>
-            </div>
-            <div>
-                <a href=""><i class="fa-solid fa-envelope"></i></a>
-                <a id="contact-email" href="mailto:manojsfstm5@gmail.com">Email</a>
-            </div>
-        </div>
+        </script>
+    </section>   
 
+     <!-------------------- CONTACTS ---------------------->
+
+     <section class="contact" id="contact">
+            <h2 class="title">Contact</h2>
+            <span></span>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="icons">
+                        <div class="row">
+                            <a id="contact-email" href=" mailto:manojsfstm5@gmail.com">   <i class="fas fa-envelope"></i> </a>
+                            <div class="info">
+                                <div class="sub-title">  <a id="contact-email" href=" mailto:manojsfstm5@gmail.com"> manojsfstm5@gmail.com </a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                            <div class="info">
+                        
+                                <div class="sub-title">  <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/" target="_blank">Manoj Kumar</a> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <a id="contact-github" href="https://github.com/manoj7654" target="_blank"> <i class="fab fa-github"></i> </a>
+                            <div class="info">
+                    
+                                <div class="sub-title"> <a id="contact-github" href="https://github.com/manoj7654" target="_blank" >manoj7654</a> </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <a id="contact-phone"> <i class="fa-sharp fa-solid fa-phone"></i> </a>
+                           <div class="info">
+                               <div class="head">7654504943</div>
+                           </div>
+                       </div>
+
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="https://getform.io/f/c2d1b5a3-9fc8-4f22-bdd0-51a8e44287ee" method="POST" encType="multipart/form-data">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" name="name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" name="subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
     </section>
+
+    <!-- footer section start -->
+    <footer id="foot">
+        <span class="far fa-copyright" id="footer"> <span> 2023 All Rights Reserved, Made with 💗 by
+            Manoj Kumar.  </span>   
+</span>
+    </footer>
 </body>
+<script src="./index.js"></script>
 
 </html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
-     
-
-
-
-<script src="index.js"></script>
