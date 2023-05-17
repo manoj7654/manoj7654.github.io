@@ -611,7 +611,8 @@ footer{
       grid-template-columns: repeat(1,1fr);
   }
   .project-card{
-      width:90%
+      width:90%;
+      margin-left: 30px;
   }
   .contact-content,.fields,.git-box{
       display :flex;
@@ -653,22 +654,22 @@ footer{
   }
   .project-card{
       width:85%;
-      margin-left: 30px;
+      margin-left: 20px;
   }
  
 }
 @media all and (max-width: 400px) {
   .skill-box{
-     margin-left: 30px;
+     margin-left: 10px;
   } 
   .toolls-box{
-    margin-left: 30px;
+    margin-left: 10px;
     /* border: 1px solid red; */
   }
  
   .project-card{
       width:85%;
-      margin-left: 30px;
+      margin-left: 10px;
   }
   .project-github-link a{
      font-size: 10px;
@@ -686,12 +687,18 @@ footer{
   }
 }
 @media all and (max-width: 280px) {
-
+  .skill-box{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+ } 
   .toolls-box{
   
     margin-left: -35px;
     /* border: 1px solid red; */
   }
+  .project-card{
+    margin-left: -15px;
+}
 
 }
 
@@ -700,14 +707,14 @@ footer{
      width:100%
   }
   .skill-box{
-     margin-left: -40px;
+     margin-left: -25px;
   } 
   .skill-box>div{
       width:90px
   }
   .project-card{
       width:85%;
-      margin-left: -5px;
+      /* margin-left: -5px; */
   }
   .project-github-link a{
      font-size: 10px;
