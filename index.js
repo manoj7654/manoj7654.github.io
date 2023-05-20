@@ -27,6 +27,9 @@
       navlist.classList.toggle("active")
      
      }
+    //  hamburger.addEventListener("click",()=>{
+    //   hamburger.innerHTML=`<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVwZzlgRHmEdl6q0vMl0PVV0DRay5YC-TMWw&usqp=CAU" alt="">`
+    //  })
       
          // typing animation//
      
