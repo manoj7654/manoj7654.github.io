@@ -1,0 +1,227 @@
+@media screen and (min-width: 300px) and (max-width: 710px){
+
+ /* HOME PAGE */
+
+#home {
+    display: flex;
+    margin-top: 80px;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* PROJECTS */
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 92%;
+    padding-top: 10vh;
+}
+.react-activity-calendar {
+    width: 90%;
+  }
+  .react-activity-calendar {
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    width: 90%;
+}
+/* SKILLS */
+#skills_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+}
+#skills_container {
+    width: 75%;
+    gap: 60px;
+
+}
+.about_container > div:nth-child(2) {
+    width: 68%;
+}
+#about_image > img {
+    width: 60%;
+    margin: auto;
+}
+
+/* ------------------------------------------------------------------------ */
+#about {
+    width: 100%;
+  }
+
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .uil {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background-color: rgb(43, 3, 56);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .uil {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  /*for the home page.  */
+  #home {
+    display: grid;
+    grid-template-columns: repaet(1, 1fr);
+    width: 90%;
+    /* border: 1px solid black; */
+    margin-bottom: -62px;
+    padding: 1rem 2rem;
+    align-items: flex-end;
+  }
+  #intro_section {
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+  }
+  .name {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 25px;
+  }
+  .logotheme > img {
+    width: 100%;
+    margin: auto;
+  }
+
+  #githubstats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 30px;
+  }
+  .react-activity-calendar {
+    width: 90%;
+  }
+  #githubstats > div > img {
+    width: 75%;
+  }
+  #github-top-langs {
+    width: 68%;
+  }
+  /* skills */
+
+  #skills {
+    margin-top: 2vh;
+  }
+  .deployed_container {
+    margin-top: 1px;
+  }
+  /* about_section */
+  .about_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .about_section {
+    margin: auto;
+  }
+
+  #about_image {
+    width: 100%;
+  }
+  .about_section {
+    width: 100%;
+  }
+  #user-detail-intro {
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid yellow; */
+  }
+  .project-card {
+    font-size: small;
+  }
+  i {
+    font-size: small;
+  }
+
+  .project-deployed-link > button {
+    font-size: small;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    border: 0;
+    outline: 15px;
+    background-color: #262622;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+
+  /* row */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 711px) and (max-width: 1080px){
+ .about_ex_projects{
+  display: none;
+ }
+}
+@media screen and (min-width: 711px) and (max-width: 1080px){
+ .name{
+  font-size: 2rem;
+ }
+
+
+ /* changes on 17/05/23 */
+ nav .uil {
+  display: block;
+  font-size: 25px;
+}
+
+#sidemenu{
+  display: none;
+}
+nav ul {
+  background-color: rgb(43, 3, 56);
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+
+}

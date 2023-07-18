@@ -5,3 +5,7 @@ after_spec_results.json
 package-lock.json
 results.json
 submissionData.json
+cypress.config.js
+
+cypress
+.vscode

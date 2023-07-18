@@ -2,360 +2,434 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manoj Kumar:Portfolio</title>
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- auto-type -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <!-- main css -->
-    <link rel="stylesheet" href="./style.css" />
-        <!-- reveal script -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoj | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-</style>
+  <!-- githupb --> 
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <!-- icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- githupb link -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <!-- githublink.. -->
+  <!-- font awesome -->
+  <!--  -->
+  <link rel="shortcut icon" href="./imgage/pp.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+</head>
 
 <body>
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> -->
-    <!-- navbar-start -->
-    <nav id="nav-menu">
-            <!-- <div class="logo">MK</div> -->
-            <div class="logo">
-                <a href="#"><span id="m">M</span><span id="k">K</span></a>
-            </div>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li><a class="nav-link home" href="#home">HOME</a></li>
-                    <li><a class="nav-link about" href="#about">ABOUT</a></li>
-                    <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-                    <li><a class="nav-link toolls" href="#toolls">TOOLS</a></li>
 
-                    <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-                    <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-                    <li id="resume-button-1">
-                        <a  class="nav-link resume" id="resume-link-1" href="Manoj-Kumar-Resume.pdf"
-                       target="_blank"  download="">RESUME 
-                       </a
-                       ></li>          
-                </ul>
-            </div>
-           
+  <div id="headers">
+    <div class="container">
+      <nav id="nav-menu">
+        
+        <h1 onclick="homePage()" style="color: white;"><span style="color:gold">M</span>anoj</h1>
+        <ul id="sidemenu">
+          <li><a onclick="closemenu()" class="nav-link home" href="#home">HOME</a></li>
+          <li><a onclick="closemenu()" class="nav-link about" href="#about">ABOUT</a></li>
+          <li><a onclick="closemenu()" class="nav-link skills" href="#skills">SKILLS</a></li>
+          <li><a onclick="closemenu()" class="nav-link project" href="#project">PROJECTS</a></li>
+          <li><a onclick="closemenu()" class="nav-link contact" href="#contact">CONTACT</a></li>
+          <li class="nav-link resume" id="resume-button-1">
+            <a
+              id="resume-link-1"
+              class="resume"
+              href="Manoj-Kumar-Resume.pdf"
+              download="Manoj-Kumar-Resume"
+              target="_blank"
+              >RESUME</a
+            >
+          </li>
 
-    </nav>
-    <!-------------------- HOME ---------------------->
-    <section id="home">
-      <div id="main">
-        <div id="main-cont">
-            <p>Hi, My Name is </p>
-            <h1  id="user-detail-name">Manoj Kumar</h1>
-            <div class="container">
-            <p><span class="typing"></span></p>
-            </div>
-            <button id="resume-button-2"><a id="resume-link-2" href="Manoj-Kumar-Resume.pdf" target="_blank"
-                download="">Resume</a></button>
-        </div>
-                   <div class="pro">
-                    <img src="./images/profile.jpg" alt="">  
-                   </div>
-      </div>    
+          <i class="uil uil-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="uil uil-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+  <!-- ---------------------------------------------Home Page--------------------------------------->
+  <section id="home">
+
+    <div id="intro_section" style="margin-top: 80px;">
+      <p style="color:silver">Hi Everyone </p>
       
-    </section>
-
-    <!-------------------- ABOUT ---------------------->
-    <section id="about" class="about section">
-        <div class="hero">
-            <article>
-              <h1>About Me</h1>
-              <img class="home-img" width=100% src="https://img.etimg.com/thumb/msid-84146083,width-1015,height-761,imgsize-638053,resizemode-8/prime/technology-and-startups/booting-up-developer-economy-how-tech-startups-are-helping-coders-build-and-test-software-faster.jpg" alt="">
-              <content id="user-detail-intro">
-                A passionate Nodejs Back-End Developer, Dedicated  to developing robust
-                    applications with the help of Javascript, Express and Nodejs that interact  with the Backend part of
-                    web applications. Extensive expertise in website architecture, design, web design, and web API
-                    designs. 
-              </content>
-        </article>
-       </div>
-    </section>
-    <!-------------------- SKILLS ---------------------->
-    <section id="skills">
-        <h1>Skills</h1>
-        <span></span>
-     <div class="skill-box">
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/nodejs.png" alt="nodejs.png" />
-            <h5 class="skills-card-name">Node JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/ee.png" alt="express.png" />
-            <h5 class="skills-card-name">Express JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/mongodb.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">Mongo DB</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/javascript.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">JavaScript</h5>
-        </div>
-        
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/aws.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">Aws</h5>
-        </div>
-        
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/html2.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">HTML</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/css2.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">CSS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/socket io2.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">WebSocket</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images2/dsa.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">DSA</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="./images/redis.png" alt="mongodb.png" />
-            <h5 class="skills-card-name">REDIS</h5>
-        </div>
-    </div>
-    </section>
-
-    <!-- ----------------------TOOLS-------------------------- -->
-    <section id="toolls">
-        <h1>Tools</h1>
-        <span></span>
-     <div class="toolls-box">
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/vscode.jpg" alt="nodejs.png" />
-            <h5 class="toolls-card-name">Vscode</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/postman.png" alt="express.png" />
-            <h5 class="toolls-card-name">Postman</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/gibash.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Gitbash</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/github.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Github</h5>
-        </div>
-        
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/netlify.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Netlify</h5>
-        </div>
-        
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/railway.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Railway</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/notion.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Notion</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/npm.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">NPM</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/replit.png" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Replit</h5>
-        </div>
-        <div class="toolls-card">
-            <img class="toolls-card-img" src="./images/canva.jpg" alt="mongodb.png" />
-            <h5 class="toolls-card-name">Canva</h5>
-        </div>
-    </div>
-    </section>
-    <!-------------------- PROJECTS ---------------------->
-    <section id="projects">
-        <h1>Projects</h1>
-        <span></span>
-     <div class="project">
-        <!-- 1 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/p1.png" alt=""></div>
-            <h2 class="project-title">Fitnessblender</h2>
-            <p class="project-description">Fitnessblender is a health Hub. Fitnessblender goal is to make health and
-                fitness attainable,affordable and approachable.</p>
-            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS</p>
-         <div class="repo-links">
-            <div class="project-github-link"><a href="https://github.com/manoj7654/calculating-use-926" target="_blank">Git Repo</a></div>
-            <div class="project-deployed-link"><a href="https://bucolic-trifle-671509.netlify.app/" target="_blank">Live</a></div>
-        </div> 
-       </div>         
-        <!-- 2 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/Tooth Tracker.png" alt=""></div>
-            <h2 class="project-title">Tooth Tracker</h2>
-            <p class="project-description">Tooth Tracker is booking apointment system . Where patients can book meeting with our doctor and get solution about teeth. </p>
-            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS |  MySQL | Express</p>
-         <div class="repo-links">
-            <div class="project-github-link"><a  href="https://github.com/Yunuslala/uninterested-weather-2204" target="_blank">Git Repo</a></div>
-            <div class="project-deployed-link"><a  href="https://uninterested-weather-2204-frontend.vercel.app/" target="_blank">Live</a></div>
-         </div>
-       </div>
-        <!-- 3 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/p3.png" alt=""></div>
-            <h2 class="project-title">Bewacoof</h2>
-            <p class="project-description">Bewacoof is the India's largest fashion D2C barand and e-commerce startup
-                and also User can buy Product related  thing from here.</p>
-            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS | Express</p>
-            <div class="repo-links">
-                <div class="project-github-link"><a  href="https://github.com/manoj7654/fascinated-governor-8349" target="_blank">Git Repo</a></div>
-                <div class="project-deployed-link"><a  href="https://resonant-kitsune-a491f0.netlify.app//" target="_blank">Live</a></div>
-            </div>
-        </div>
-           
-        <!-- 4 -->
-        <div class="project-card">
-             <div class="small_div"><img src="./images/tictoe.png" alt=""></div>
-            <h2 class="project-title">Tic Tac Toe</h2>
-            <p class="project-description">Tic Tac Toe is a game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does. </p>
-            <p class="project-tech-stack">Tech Stack: Html | JavaScript | CSS | Socket.io | React | Nodejs | MongoDB</p>
-          <div class="repo-links">
-              <div class="project-github-link"><a href="https://github.com/manoj7654/Tic-Tac-Toe---clone" target="_blank">Git Repo</a></div>
-              <div class="project-deployed-link"><a href="https://genuine-granita-f5d735.netlify.app/" target="_blank">Live</a></div>
-           </div>
-        </div>
-        <div class="project-card">
-            <div class="small_div"><img src="./images/Screenshot (544).png" alt=""></div>
-           <h2 class="project-title">Ticket Reservation</h2>
-           <p class="project-description">About
-            This is a Ticket Reservation System application built using Node.js and MongoDB. It provides functionalities for users to register, login, search for theaters, add movies to theaters, book tickets, and manage their cart. </p>
-           <p class="project-tech-stack">Tech Stack:React.js | CSS | Express| Nodejs | MongoDB</p>
-         <div class="repo-links">
-             <div class="project-github-link"><a href="https://github.com/manoj7654/Ticket_Reservation_System" target="_blank">Git Repo</a></div>
-             <div class="project-deployed-link"><a href="https://ticket-tan.vercel.app/" target="_blank">Live</a></div>
-          </div>
-       </div>
+      - <p id="user-detail-intro">
+      <h1 class="name">
+        I'm <span id="span_name" id="user-detail-name">Manoj Kumar</span>
+        <span>
+          <br>
+          Full
+          Stack Web Developer.
+        </span>
+      </h1>
+      </p>
+      <div id="resume_btn1">
+        <button  id="resume-button-2"><a id="resume-link-2" href="Manoj-Kumar-Resume.pdf"
+          target="_blank"   download="Manoj-Kumar-Resume">Resume</a></button>
       </div>
-    </section>
+    </div>
+    <div class="logotheme" style="margin-top: 80px;">
+      <img id="myimage" src="./imgage/pp.jpg" alt="">
+    </div>
+  </section>
+
+
+
+  
+  <!----------------------------------------About Page------------------------------------->
+  <br style="color:white">
+
+  <section id="about" class="about section">
+    <h1 style="margin-bottom: 40px;" id="aboutheading">About Me </h1>
+    <div class="about_container">
+      <div id="about_image">
+        <img id="codersImage" class="home-img" width="60%"
+          src="https://cdn.dribbble.com/users/50785/screenshots/3386694/media/5aa4b3c79eef38dedab010a24662060b.jpg"
+          alt="">
+      </div>
+      <div class="about_section">
+        
+        <p id="user-detail-intro">
+          An Aspiring full-stack web developer with 1200 hours of
+          practical coding experience, strongly passionate about
+          new technologies. collaborative team player proficient in
+          building efficient software solutions. looking for a
+          challenging role in a growth-oriented organization.</p>
+        <div class="about_ex_projects">
+          <div id="projects">
+            <i class="uil uil-shield"></i>
+            <h5>Experience</h5>
+            <small>6 months</small>
+          </div>
+          <div id="my_experience">
+            <i class="uil uil-file-shield-alt"></i>
+            <h5>50+ Project</h5>
+            <small>Assignments</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- project section is here--------------------- -->
+  <section class="projectsection" id="project">
+    <h1 id="aboutheading">My Projects</h1>
+
+    <!-- 1 -->
+    <div class="project_container">
+
+      
+      <div class="project-card">
+        <h3 class="project-title">Fitnessblender clone</h3>
+        <div><img id="project_img" src="./imgage/p1.png" alt=""></div>
+        <div id="project_descriptions">
+        
+          <div id="project_content">
+            <p class="project-description">Fitnessblender is a health Hub. Fitnessblender goal is to make health and
+              fitness attainable,affordable and approachable.</p>
+            <p class="project-tech-stack"><span> HTML | CSS | Javascript </span></p>
+          </div>
+
+          <div id="deployed_container">
+            <a class="project-github-link" href="https://github.com/manoj7654/calculating-use-926" target="_blank"><i
+                class="fa fa-github fa-3x"></i>
+            </a>
+            <a class="project-deployed-link" href="https://bucolic-trifle-671509.netlify.app/" target="_blank"><button>Live</button></a>
+          </div>
+        </div>
+      </div>
    
-    <!-- <------------------ GitHUB -------------------- -->
-    <section class="react-activity-calendar">
-        <h1>GitHub</h1>
-        <span></span>
-        <div class="git-box">
-            <div>
-                <img id="github-streak-stats"
-                src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-                alt="streakstat" />
-            </div>
-            <div>
-                <img id="github-top-langs"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoj7654&theme=outrun"
-                alt="top_languages" />
-            </div>
-            <div>
-                <img id="github-stats-card"
-                src="https://github-readme-stats.vercel.app/api?username=manoj7654&count_private=true" alt="stat-card" />
-            </div>
+      <div class="project-card">
+        <h3 class="project-title">Tooth Tracker</h3>
+        <div><img id="project_img" src="imgage/Tooth Tracker.png" alt=""></div>
+        <div id="project_descriptions">
+        
+          <div id="project_content">
+            <p class="project-description">Tooth Tracker is booking apointment system . Where patients can book meeting with our doctor and get solution about teeth.
+            </p>
+            <p class="project-tech-stack"> <span>HTML | CSS | Javascript | Node.js | Express.js |
+              |  MySQL </span></p>
+          </div>
+
+          <div id="deployed_container">
+            <a class="project-github-link" href="https://github.com/Yunuslala/uninterested-weather-2204" target="_blank"><i
+                class="fa fa-github fa-3x"></i>
+            </a>
+            <a class="project-deployed-link" href="https://uninterested-weather-2204-frontend.vercel.app/" target="_blank"><button>Live</button></a>
+          </div>
         </div>
-    </section>
-    <section id="gitcal">
-        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    
-        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    
-        <!-- Prepare a container for your calendar. -->
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
+      </div>
+      <!-- 2 -->
+      <div class="project-card">
+        <h3 class="project-title">Bewacoof</h3>
+        <div><img id="project_img" src="./imgage/p3.png" alt=""></div>
+        <div id="project_descriptions">
+         
+          <div id="project_content">
+            <p class="project-description">Bewacoof is the India's largest fashion D2C barand and e-commerce startup
+              and also User can buy Product related  thing from here.</p>
+            <p class="project-tech-stack"><span>HTML | CSS | Javascript | Node.js | Express.js |
+                MongoDB</span></p>
+          </div>
+
+          <div id="deployed_container">
+            <a class="project-github-link" href="https://github.com/manoj7654/fascinated-governor-8349" target="_blank"><i
+                class="fa fa-github fa-3x"></i>
+            </a>
+            <a class="project-deployed-link" href="https://resonant-kitsune-a491f0.netlify.app/" target="_blank"><button>Live</button></a>
+          </div>
         </div>
-    
-        <script>
-            GitHubCalendar(".calendar", "manoj7654");
-            // or enable responsive functionality
-            GitHubCalendar(".calendar", "manoj7654", { responsive: true });
-        </script>
-    </section>   
+      </div>
+     
+      <div class="project-card">
+        <h3 class="project-title">Tic Tac Toe </h3>
+        <div><img id="project_img" src="./imgage/tictoe.png" alt=""></div>
+        <div id="project_descriptions">
+         
+          <div id="project_content">
+            <p class="project-description">Tic Tac Toe is a game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does. 
+            </p>
+            <p class="project-tech-stack"><span> HTML | CSS | JavaScript |Express | NodeJS | MongoDB | React | Socket.Io</span></p>
+          </div>
 
-     <!-------------------- CONTACTS ---------------------->
+          <div id="deployed_container">
+            <a class="project-github-link" href="https://github.com/manoj7654/Tic-Tac-Toe---clone" target="_blank"><i
+                class="fa fa-github fa-3x"></i>
+            </a>
+            <a class="project-deployed-link"
+              href="https://genuine-granita-f5d735.netlify.app/" target="_blank"><button>Live</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">Movie Ticket booking Sysytem </h3>
+        <div><img id="project_img" src="imgage/Screenshot (544).png" alt=""></div>
+        <div id="project_descriptions">
+         
+          <div id="project_content">
+            <p class="project-description">The ticket Booking system is a web-based application that allows users to book Tickets for a Movie. 
+            </p>
+            <p class="project-tech-stack"><span> HTML | CSS | JavaScript | ReactJs | Express | NodeJS | MongoDB </span></p>
+          </div>
 
-     <section class="contact" id="contact">
-            <h2 class="title">Contact</h2>
-            <span></span>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="icons">
-                        <div class="row">
-                            <a id="contact-email" href=" mailto:manojsfstm5@gmail.com">   <i class="fas fa-envelope"></i> </a>
-                            <div class="info">
-                                <div class="sub-title">  <a id="contact-email" href=" mailto:manojsfstm5@gmail.com"> manojsfstm5@gmail.com </a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-                            <div class="info">
-                        
-                                <div class="sub-title">  <a id="contact-linkedin" href="https://www.linkedin.com/in/manoj-kumar-527974244/" target="_blank">Manoj Kumar</a> </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                             <a id="contact-github" href="https://github.com/manoj7654" target="_blank"> <i class="fab fa-github"></i> </a>
-                            <div class="info">
-                    
-                                <div class="sub-title"> <a id="contact-github" href="https://github.com/manoj7654" target="_blank" >manoj7654</a> </div>
-                            </div>
-                        </div>
+          <div id="deployed_container">
+            <a class="project-github-link" href="https://github.com/manoj7654/Ticket_Reservation_System" target="_blank"><i
+                class="fa fa-github fa-3x"></i>
+            </a>
+            <a class="project-deployed-link"
+              href="https://ticket-tan.vercel.app/" target="_blank"><button>Live</button></a>
+          </div>
+        </div>
+      </div>
+  </section>
 
-                        <div class="row">
-                            <a id="contact-phone"> <i class="fa-sharp fa-solid fa-phone"></i> </a>
-                           <div class="info">
-                               <div class="head">7654504943</div>
-                           </div>
-                       </div>
 
-                    </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message Me</div>
-                    <form action="https://getform.io/f/69c390ab-ca41-4f39-89a0-29b8f916b788" method="POST" encType="multipart/form-data">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" name="name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" name="subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-    </section>
+  </section>
+  <!-------------------- SKILLS ---------------------->
+  <section id="skills">
+    <h1 id="skills_i_have">Skills I Have..</h1>
+    <div id="skills_container">
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/javascript.png" alt="nodejs.png" />
+        <h5 class="skills-card-name">Javascript</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/nodejs.png" alt="express.png" />
+        <h5 class="skills-card-name">Node.js</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Status_iucn_EX_icon.svg/480px-Status_iucn_EX_icon.svg.png"
+          alt="mongodb.png" />
+        <h5 class="skills-card-name">Express.js</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/mongodb.png" alt="mongodb.png" />
+        <h5 class="skills-card-name">Mongo DB</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/mysql.png" alt="mongodb.png" />
+        <h5 class="skills-card-name">MySQL</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/redis.svg" alt="mongodb.png" />
+        <h5 class="skills-card-name">Redis</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/amazon-aws.png" alt="mongodb.png" />
+        <h5 class="skills-card-name">AWS</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/html5.png" alt="mongodb.png" />
+        <h5 class="skills-card-name">HTML</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/css3.png" alt="mongodb.png" />
+        <h5 class="skills-card-name">CSS</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/react.svg" alt="mongodb.png" />
+        <h5 class="skills-card-name">React</h5>
+      </div>
+      
+    </div>
+  </section>
 
+  <!-- tools section -->
+
+  <section class="toolsskills" id="skills">
+    <h1 id="skills_i_have">Tools I Use..</h1>
+    <div id="skills_container">
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/git.png" alt="git.png" />
+        <h5 class="skills-card-name">Git</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/github (3).png" alt="express.png" />
+        <h5 class="skills-card-name">GitHub</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://static-00.iconduck.com/assets.00/npm-icon-512x512-qtfdrf37.png"
+          alt="npm.png" />
+        <h5 class="skills-card-name">NPM</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/postman.png" alt="postman.png" />
+        <h5 class="skills-card-name">Postman</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img"
+          src="https://cpwebassets.codepen.io/assets/social/facebook-default-05cf522ae1d4c215ae0f09d866d97413a2204b6c9339c6e7a1b96ab1d4a7340f.png"
+          alt="postman.png" />
+        <h5 class="skills-card-name">Codepen</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"
+          alt="postman.png" />
+        <h5 class="skills-card-name">Netlify</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/vscode.jpg"
+          alt="postman.png" />
+        <h5 class="skills-card-name">VS Code</h5>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./imgage/replit.png"
+          alt="postman.png" />
+        <h5 class="skills-card-name">Replit</h5>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Prepare a container for your calendar. -->
+  <!-------------------- GitHUB ---------------------->
+  <section class="react-activity-calendar">
+    <h1 id="githtext">GitHub-Activity-Calendar</h1>
+
+    <div id="github_activity_calender">
+      <div id="react-activity-calendar">
+        <div class="calendar"></div>
+      </div>
+
+      <div id="githubstats">
+        <div>
+          <img id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=manoj7654&count_private=true"
+            alt="stat-card" />
+        </div>
+        <div>
+          <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com?user=manoj7654&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D" alt="streakstat">
+        </div>
+        <div>
+          <img id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoj7654&theme=outrun"
+            alt="top_languages" />
+        </div>
+      </div>
+     
+    </div>
+
+  </section>
+
+  <!--------------------------CONTACTS..------------------------------------  -->
+  <section id="contact">
+    <h1 id="contact_text" style="text-align: center;">Connect with me </h1>
+    <div class="conatainer">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact</h1>
+          <p id="contact-email"><i class="uil uil-envelope-alt"></i>manojsfstm5@gmail.com</p>
+          <p id="contact-phone"><i class="uil uil-mobile-android-alt"></i>7654504943</p>
+          <div class="social-icons">
+            <a id="contact-github" href="https://www.linkedin.com/in/manoj-kumar-527974244/"><i
+                class="uil uil-linkedin"></i></a>
+            <a id="contact-linkedin" href="https://github.com/manoj7654"><i class="uil uil-github"></i></a>
+          </div>
+         
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" action="https://getform.io/f/69c390ab-ca41-4f39-89a0-29b8f916b788" method="POST" encType="multipart/form-data">
+            <input type="text" name="Name" placeholder="Your Name" required >
+            <input type="text" name="Email" placeholder="Your Email" required >
+            <textarea name="Text" id="" cols="30" rows="4"></textarea required >
+            <button type="submit" class="bt
+             btn2">Submit</button>
+          </form>
+         
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer  -->
+  <footer>
+    <p>&copy; Created By Manoj</p>
+  </footer>
 </body>
-<script src="./index.js"></script>
 
 </html>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+<script src="index.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+
+<script src="gitcalendar/gitcalendar.js"></script>
+
+<script>
+   let resume1 = document.querySelector("#resume-link-1");
+  resume1.addEventListener("click", () => {
+    window.open(
+      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link"
+    ,);
+  });
+
+  let resume2 = document.querySelector("#resume-link-2");
+  resume2.addEventListener("click", () => {
+    window.open(
+      "https://drive.google.com/file/d/10C5IVHqeM2huu0F-KyZHNAo3XD0VGp9w/view?usp=share_link"
+    );
+  });
+
+ 
+</script>

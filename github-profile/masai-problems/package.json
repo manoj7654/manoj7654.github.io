@@ -4,5 +4,6 @@
     "cypress:open": "cypress open",
     "start": ""
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "start": ""
+  },
+  "name": "github-portfolio",
+  "description": "",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bire210/bire210.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bire210/bire210.github.io/issues"
+  },
+  "homepage": "https://github.com/bire210/bire210.github.io#readme",
+  "dependencies": {
+    "github-calendar": "^2.3.2"
+  }
+}
